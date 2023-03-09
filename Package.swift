@@ -16,13 +16,13 @@ let package = Package(
 		.target(name: "GXCoreModule_SD_Store_StoreInteropWrapper",
 				dependencies: [
 					"GXCoreModule_SD_Store_StoreInterop",
-					.product(name: "GXCoreBL", package: "GXCoreBL", condition: .when(platforms: [.watchOS, .iOS, .tvOS]))
+					.product(name: "GXCoreBL", package: "GXCoreBL", condition: .when(platforms: [.tvOS, .iOS, .watchOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Store_StoreInterop",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Store_StoreInterop-1.0.0-beta+20230309154144.xcframework.zip",
-			checksum: "d35e4feb497075db38084290d0af207466dd85465d6b7a7f23ba1d84dadefd0a"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Store_StoreInterop-1.0.0-beta+20230309171424.xcframework.zip",
+			checksum: "e6a41e2da7c584b998467302b5569e878b2eada9ad712005797a96a5cdcbe59a"
 		)
 	]
 )
