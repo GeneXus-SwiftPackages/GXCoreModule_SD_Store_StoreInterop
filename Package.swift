@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Store_StoreInterop",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Store_StoreInterop-1.0.0-beta+20230428202437.xcframework.zip",
-			checksum: "17589bb3ff0dbd69c72d0d59405fd9e28d2c8d742004e6e0c173bc35451d7a37"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Store_StoreInterop-1.0.0-beta+20230502131235.xcframework.zip",
+			checksum: "c93e6dd9b6412dd28325b3ba1633dd5bc3a4eb2ec55cb8b5281df913761282be"
 		)
 	]
 )
