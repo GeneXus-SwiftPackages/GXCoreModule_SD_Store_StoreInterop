@@ -1,28 +1,28 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 5.7
 import PackageDescription
 
 let package = Package(
 	name: "GXCoreModule_SD_Store_StoreInterop",
-	platforms: [.iOS("12.0"), .watchOS("9.0"), .tvOS("12.0"), .visionOS("1.0")],
+	platforms: [.iOS("12.0"), .watchOS("9.0"), .tvOS("12.0")],
 	products: [
 		.library(
 			name: "GXCoreModule_SD_Store_StoreInterop",
 			targets: ["GXCoreModule_SD_Store_StoreInteropWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.6.0-beta.3")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.6.0-beta.4")
 	],
 	targets: [
 		.target(name: "GXCoreModule_SD_Store_StoreInteropWrapper",
 				dependencies: [
 					"GXCoreModule_SD_Store_StoreInterop",
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .watchOS, .tvOS, .visionOS]))
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .watchOS, .tvOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Store_StoreInterop",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Store_StoreInterop-1.6.0-beta.3.xcframework.zip",
-			checksum: "ce63371ed70f038e4f94b017fb4f98964de3eab6719c172683adcdffc0e84a1c"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Store_StoreInterop-1.6.0-beta.4.xcframework.zip",
+			checksum: "85ee67ae848fe5e3c146920fd91d14be8fcff737d560cf71af6b87e016afd133"
 		)
 	]
 )
